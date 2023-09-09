@@ -1,0 +1,9 @@
+---
+- name: Add a user
+  hosts: 172.105.253.58
+  become: yes
+  tasks:
+    - name: Create a user
+      user:
+        name: test
+        state: present
